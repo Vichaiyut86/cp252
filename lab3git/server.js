@@ -8,10 +8,11 @@ const port = 8000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World!\n');
+  res.end('Hello SWU!\n');
 });
 
 // Start listening for requests
 server.listen(port, hostname, () => {
+
   console.log(`Simple server http://${hostname}:${port}/`);
 });
